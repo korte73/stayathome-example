@@ -1,0 +1,38 @@
+div {
+    width: 700px;
+    height: 100px;
+    border: 2px black solid;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 30px;
+    padding-right: 30px;
+    margin-top: 20px;
+
+
+ 
+}
+
+a {
+    background: black;
+    width: 50px;
+    height: 50px;
+  
+
+}
+
+.blue {
+    border-color: #4285F4;
+}
+
+.blue a{
+    background-color: #4285F4;
+}
+
+.purple {
+    background: #FF6247;
+}
+
+.purple a{
+    background-color: #643579;
+}
