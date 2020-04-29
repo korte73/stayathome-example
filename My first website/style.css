@@ -115,3 +115,7 @@ section {
   height: 350px;
   
 }
+
+section {
+  border: 2px black solid;
+}
