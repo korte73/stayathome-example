@@ -1,9 +1,11 @@
 console.log("System Online");
-let newTodo = "x";
-console.log(newTodo)
-$("#ibutton").click( function() {
-    newTodo = document.getElementById("ifield").value;
-    console.log(newTodo);
-    $("#todolist").append("<li>"+newTodo+"</li>");
+let newTodo = "";
 
-})
+// Put field value to list
+function readField() {
+    let newTodo = document.getElementById("ifield").value;
+        $("#todolist").append("<li>" + newTodo + "</li>");
+
+}
+
+$("#ibutton").click(readField) 
