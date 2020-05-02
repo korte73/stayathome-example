@@ -4,7 +4,8 @@ let newTodo = "";
 // Put field value to list
 function readField() {
     let newTodo = document.getElementById("ifield").value;
-        $("#todolist").append("<li>" + newTodo + "</li>");
+    $("#todolist").append("<li>" + newTodo + "</li>");
+    document.getElementById("ifield").value ="";
 
 }
 
