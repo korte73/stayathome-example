@@ -1,0 +1,40 @@
+aside {
+    width: 50px;
+    border: 2px black solid;
+    display: flex;
+
+}
+
+#aside-right {
+    flex-direction: row-reverse;
+}
+
+
+main {
+    width: 800px;
+    height: 500px;
+    border: 2px red solid;
+    position: relative;
+}
+
+.keret {
+    display: flex;
+
+}
+
+.mfoto {
+    width: 800px;
+    height: 500px;
+}
+
+.description {
+    width: 795px;
+    height: 120px;
+    border: 2px yellow solid;
+    position: absolute;
+    bottom: 0px;
+}
+
+#r-arrow {
+    transform: rotateY(180deg);
+}
