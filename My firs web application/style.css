@@ -22,7 +22,7 @@ main {
 
 }
 
-.mfoto {
+#photo {
     width: 800px;
     height: 500px;
 }
@@ -37,4 +37,5 @@ main {
 
 #r-arrow {
     transform: rotateY(180deg);
+
 }
