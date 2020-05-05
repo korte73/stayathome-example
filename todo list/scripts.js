@@ -9,4 +9,4 @@ function readField() {
 
 }
 
-$("#ibutton").click(readField) 
+$("#ibutton").click(readField);
