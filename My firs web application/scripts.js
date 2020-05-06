@@ -7,7 +7,8 @@ let currentPhoto = 0
 let photoData1 = {
     photo: 'img/h20180001.jpg',
     title: 'My title',
-    description: 'What happend here, why is this a very nice image'
+    description: 'What happend here, why is this a very nice image',
+    index: 'p1'
 };
 
 let photoData2 = {
@@ -44,6 +45,7 @@ function loadPhoto(photoNumber) {
 
 }
 
+// Load main photo
 loadPhoto(currentPhoto);
 
 $("#r-arrow").click(() => {
@@ -59,3 +61,9 @@ $("#l-arrow").click(() => {
         loadPhoto(currentPhoto);
     }
 })
+
+// Load thumbnails
+ imagesData.forEach( function ({photo,index}) {
+     $('footer').append('<img src='+photo+' id='+index+'>')
+     console.log(index)
+ })
