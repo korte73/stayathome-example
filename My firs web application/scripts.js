@@ -14,13 +14,18 @@ let photoData1 = {
 let photoData2 = {
     photo: 'img/h20180002.jpg',
     title: 'Ez a cím',
-    description: 'Description of the second photo'
+    description: 'Description of the second photo',
+    index: 'p2'
+    
+
 };
 
 let photoData3 = {
     photo: 'img/h20180003.jpg',
     title: 'Ez a cím',
-    description: 'Description of the second photo'
+    description: 'Description of the second photo',
+    index: 'p3'
+    
 };
 
 let photoData4 = {
@@ -48,6 +53,8 @@ function loadPhoto(photoNumber) {
 // Load main photo
 loadPhoto(currentPhoto);
 
+
+// click handlers
 $("#r-arrow").click(() => {
     if (currentPhoto < 4) {
         currentPhoto++;
@@ -62,7 +69,13 @@ $("#l-arrow").click(() => {
     }
 })
 
-// Load thumbnails
+$("#p2").click(() => {
+    loadPhoto(1);
+
+})
+
+
+// Make thumbnails thumbnails and give them unique ID-s 
  imagesData.forEach( function ({photo,index}) {
      $('footer').append('<img src='+photo+' id='+index+'>')
      console.log(index)
